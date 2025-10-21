@@ -1,0 +1,353 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: #001aff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 1.8em;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #d4af37;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #0618be;
+  color: #002147;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #230ee0;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.section-light {
+  background-color: #f0f0f0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.events {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.event {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-left: 5px solid #1300bb;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cards,
+  .events {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mission-section {
+  background-color: #0011ff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.mission-section h2 {
+  font-size: 2em;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.mission-box {
+  background-color: #003cff;
+  border-left: 6px solid #d4af37;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+  border-radius: 8px;
+}
+
+.mission-section {
+  background-color: #494949;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.mission-section h2 {
+  font-size: 2em;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.mission-box {
+  background-color: #1100ff;
+  border-left: 6px solid #d4af37;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+  border-radius: 8px;
+}
+
+.ministries-section {
+  background-color: #e07070;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ministries-section h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #002147;
+}
+
+.ministries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.ministry-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.ministry-box:hover {
+  transform: translateY(-5px);
+}
+
+/* 🎨 Temas por ministerio */
+
+.ministry-box.kids {
+  background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+}
+
+.ministry-box.women {
+  background: linear-gradient(135deg, #C678DD, #F8BBD0);
+}
+
+.ministry-box.men {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.ministry-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.ministry-box p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.contact-section {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #002147;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.social-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.social-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Colores personalizados */
+.social-btn.whatsapp {
+  background-color: #25D366;
+}
+
+.social-btn.facebook {
+  background-color: #1877F2;
+}
+
+.social-btn.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+}
+
+/* Hover */
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
